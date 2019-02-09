@@ -46,6 +46,11 @@ html {
   --accent: #b16180;
 }
 
+::selection {
+  color: var(--primary);
+  background: var(--secondary);
+}
+
 .default-layout {
   &__container {
     display: flex;
