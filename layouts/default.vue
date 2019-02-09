@@ -43,6 +43,7 @@ html {
 :root {
   --primary: #ffaa55;
   --secondary: #e1627d;
+  --accent: #b16180;
 }
 
 .default-layout {
