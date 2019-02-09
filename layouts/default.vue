@@ -30,6 +30,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: var(--secondary);
 }
 
 *,
@@ -37,6 +38,11 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+:root {
+  --primary: #ffaa55;
+  --secondary: #e1627d;
 }
 
 .default-layout {

@@ -9,7 +9,7 @@
       I'm
       <span class="name">Joel Jasper</span>
     </div>
-    <div class="hero__subtitle">A Passionate Entrepreneur</div>
+    <div class="hero__subtitle">A Passionate Digital Entrepreneur</div>
   </div>
 </template>
 
@@ -23,15 +23,15 @@ export default {
       socialMedia: [
         {
           icon: 'instagram',
-          url: 'https://www.instagram.com'
+          url: 'https://instagram.com/iamjoel1996'
         },
         {
           icon: 'facebook',
-          url: 'https://www.facebook.com'
+          url: 'https://www.facebook.com/madrasi.londoner'
         },
         {
           icon: 'twitter',
-          url: 'https://www.twitter.com'
+          url: 'https://twitter.com/LondonerMadrasi'
         }
       ]
     }

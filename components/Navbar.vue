@@ -36,14 +36,24 @@ export default {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    border-right: 1px solid black;
+    background-color: var(--secondary);
+    border-right: 0.1rem solid var(--primary);
   }
 
   &__item {
-    padding: 1rem;
+    > .nuxt-link-exact-active {
+      transition: all 0.5s;
+      background-origin: content-box;
+      background-color: var(--primary);
+    }
   }
 
   &__link {
+    padding: 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+
     svg {
       height: 2rem;
       width: 2rem;
