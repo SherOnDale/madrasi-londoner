@@ -30,9 +30,22 @@ export default {
 }
 </script>
 
-<style>
-.navbar__container {
-  display: flex;
-  flex-direction: column;
+<style lang="scss">
+.navbar {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    padding: 1rem;
+  }
+
+  &__link {
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
 }
 </style>
