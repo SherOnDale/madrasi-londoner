@@ -41,13 +41,45 @@ export default {
 
 <style lang="scss">
 .hero {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__social {
+    padding: 3rem 5rem 5rem 0;
+    align-self: flex-end;
     display: flex;
 
-    svg {
-      height: 1rem;
-      width: 1rem;
+    > * {
+      margin-right: 1rem;
     }
+
+    svg {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    align-self: center;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 300;
+
+    .name {
+      color: var(--primary);
+      font-size: 4rem;
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 2rem;
   }
 }
 </style>
