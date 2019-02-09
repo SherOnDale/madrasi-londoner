@@ -85,6 +85,18 @@ export default {
   }
 
   @media screen and (max-width: 1100px) {
+    &__container {
+      background: linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--accent) 25%,
+        var(--secondary) 25%,
+        var(--secondary) 75%,
+        var(--accent) 75%,
+        var(--secondary)
+      );
+    }
+
     &__social {
       padding: 1.5rem 0 1rem 0;
       align-self: center;
