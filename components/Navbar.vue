@@ -37,6 +37,7 @@ export default {
     flex-direction: column;
     height: 100vh;
     background-color: var(--secondary);
+    background: linear-gradient(var(--accent), var(--secondary));
     border-right: 0.1rem solid var(--primary);
   }
 
@@ -45,11 +46,15 @@ export default {
       transition: all 0.5s;
       background-origin: content-box;
       background-color: var(--primary);
+
+      svg {
+        fill: black;
+      }
     }
   }
 
   &__link {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -57,6 +62,7 @@ export default {
     svg {
       height: 2rem;
       width: 2rem;
+      fill: var(--primary);
     }
   }
 }
