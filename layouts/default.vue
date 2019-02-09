@@ -1,7 +1,10 @@
 <template>
   <div class="default-layout__container">
     <navbar class="default-layout__navbar"/>
-    <nuxt class="default-layout__nuxt"/>
+    <main class="default-layout__main">
+      <div class="default-layout__main--spacer"/>
+      <nuxt/>
+    </main>
     <hero class="default-layout__hero"/>
   </div>
 </template>
@@ -61,8 +64,15 @@ html {
     flex: 0 0 50px;
   }
 
-  &__nuxt {
+  &__main {
     flex: 1 1 45vw;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+
+    &--spacer {
+      flex-grow: 1;
+    }
   }
 
   &__hero {
