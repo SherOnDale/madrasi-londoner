@@ -47,6 +47,7 @@ html {
   --primary: #ffaa55;
   --secondary: #e1627d;
   --accent: #b16180;
+  --breakpoint-md: 1100px;
 }
 
 ::selection {
@@ -77,6 +78,25 @@ html {
 
   &__hero {
     flex: 0 0 50vw;
+  }
+
+  @media screen and (max-width: 1100px) {
+    &__container {
+      flex-direction: column;
+    }
+
+    &__main {
+      order: 1;
+      flex: initial;
+    }
+
+    &__navbar {
+      flex: initial;
+    }
+
+    &__hero {
+      flex: initial;
+    }
   }
 }
 </style>

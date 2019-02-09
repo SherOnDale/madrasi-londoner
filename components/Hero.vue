@@ -69,6 +69,7 @@ export default {
   &__title {
     font-size: 3rem;
     font-weight: 300;
+    margin-bottom: 1rem;
 
     .name {
       color: var(--primary);
@@ -80,6 +81,26 @@ export default {
   &__subtitle {
     font-weight: 300;
     font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 1100px) {
+    &__social {
+      padding: 1.5rem 0 1rem 0;
+      align-self: center;
+    }
+
+    &__title {
+      font-size: 2rem;
+
+      .name {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__subtitle {
+      font-size: 1.5rem;
+    }
   }
 }
 </style>

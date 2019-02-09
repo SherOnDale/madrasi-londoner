@@ -65,5 +65,19 @@ export default {
       fill: var(--primary);
     }
   }
+
+  @media screen and (max-width: 1100px) {
+    &__container {
+      flex-direction: row;
+      border-right: 0;
+      height: auto;
+      border-bottom: 0.1rem solid var(--primary);
+      justify-content: center;
+    }
+
+    &__link {
+      padding: 0.5rem 1rem;
+    }
+  }
 }
 </style>

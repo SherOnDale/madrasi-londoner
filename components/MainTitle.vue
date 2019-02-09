@@ -21,4 +21,10 @@ export default {
   border-bottom: 0.1rem solid var(--primary);
   color: var(--primary);
 }
+
+@media screen and (max-width: 1100px) {
+  .main-title {
+    padding: 0 3rem 1rem 1rem;
+  }
+}
 </style>
