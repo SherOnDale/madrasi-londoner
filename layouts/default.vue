@@ -53,9 +53,9 @@ html {
 }
 
 :root {
-  --primary: #ffaa55;
-  --secondary: #e1627d;
-  --accent: #b16180;
+  --primary: #ffd700;
+  --secondary: darkblue;
+  --accent: black;
   --breakpoint-md: 1100px;
 }
 
