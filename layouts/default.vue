@@ -1,8 +1,8 @@
 <template>
   <div class="default-layout__container">
-    <navbar/>
-    <nuxt/>
-    <hero/>
+    <navbar class="default-layout__navbar"/>
+    <nuxt class="default-layout__nuxt"/>
+    <hero class="default-layout__hero"/>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -39,7 +39,22 @@ html {
   margin: 0;
 }
 
-.default-layout__container {
-  display: flex;
+.default-layout {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navbar {
+    flex: 0 0 50px;
+  }
+
+  &__nuxt {
+    flex: 1 1 45vw;
+  }
+
+  &__hero {
+    flex: 0 0 50vw;
+  }
 }
 </style>
