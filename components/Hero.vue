@@ -32,6 +32,10 @@ export default {
         {
           icon: 'twitter',
           url: 'https://twitter.com/LondonerMadrasi'
+        },
+        {
+          icon: 'snapchat',
+          url: 'https://www.snapchat.com/add/iamjoel1996'
         }
       ]
     }
