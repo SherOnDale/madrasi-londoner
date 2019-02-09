@@ -1,8 +1,23 @@
 <template>
-  <div>
+  <div class="default-layout__container">
+    <navbar/>
     <nuxt/>
+    <hero/>
   </div>
 </template>
+
+<script>
+import Navbar from '@/components/Navbar.vue'
+import Hero from '@/components/Hero.vue'
+
+export default {
+  components: {
+    Navbar,
+    Hero
+  }
+}
+</script>
+
 
 <style>
 html {
@@ -22,5 +37,9 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.default-layout__container {
+  display: flex;
 }
 </style>
