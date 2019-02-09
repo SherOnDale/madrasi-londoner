@@ -2,7 +2,7 @@
   <div class="contact">
     <main-title title="Contacts"/>
     <div class="contact__content">
-      <contact-item icon-name="phone" contact-detail="+91 99 44 007900"/>
+      <contact-item icon-name="phone" contact-detail="+44 7459 018646"/>
       <contact-item icon-name="email" contact-detail="iamjoel1996@gmail.com"/>
       <contact-item icon-name="location" contact-detail="My Address"/>
     </div>
