@@ -1,10 +1,53 @@
 <template>
-  <div>Hero</div>
+  <div class="hero__container">
+    <div class="hero__social">
+      <div v-for="link in socialMedia" :key="link.icon">
+        <a :href="link.url" target="_blank" rel="noopener noreferrer" v-html="svg[link.icon]"/>
+      </div>
+    </div>
+    <div class="hero__title">
+      I'm
+      <span class="name">Joel Jasper</span>
+    </div>
+    <div class="hero__subtitle">A Passionate Entrepreneur</div>
+  </div>
 </template>
 
 <script>
-export default {}
+import svg from '@/assets/svg.js'
+
+export default {
+  data() {
+    return {
+      svg,
+      socialMedia: [
+        {
+          icon: 'instagram',
+          url: 'https://www.instagram.com'
+        },
+        {
+          icon: 'facebook',
+          url: 'https://www.facebook.com'
+        },
+        {
+          icon: 'twitter',
+          url: 'https://www.twitter.com'
+        }
+      ]
+    }
+  }
+}
 </script>
 
-<style>
+<style lang="scss">
+.hero {
+  &__social {
+    display: flex;
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}
 </style>

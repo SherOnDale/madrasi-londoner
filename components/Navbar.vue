@@ -35,6 +35,8 @@ export default {
   &__container {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    border-right: 1px solid black;
   }
 
   &__item {
