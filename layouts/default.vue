@@ -33,7 +33,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background: linear-gradient(var(--secondary), var(--accent));
+  background: linear-gradient(
+      135deg,
+      var(--secondary),
+      var(--accent) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--accent) 75%,
+      var(--secondary)
+    ),
+    linear-gradient(var(--secondary), var(--accent));
 }
 
 *,
