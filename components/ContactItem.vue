@@ -18,13 +18,30 @@ export default {
       default: 'Contact Detail'
     }
   },
-  date() {
+  data() {
     return {
-      svg: svg
+      svg
     }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  &__icon {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+      fill: var(--primary);
+    }
+  }
+}
 </style>
