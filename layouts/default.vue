@@ -33,7 +33,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: var(--secondary);
+  background: linear-gradient(var(--secondary), var(--accent));
 }
 
 *,
@@ -79,8 +79,14 @@ html {
   &__hero {
     flex: 0 0 50vw;
   }
+}
 
-  @media screen and (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
+  html {
+    background: var(--secondary);
+  }
+
+  .default-layout {
     &__container {
       flex-direction: column;
     }
