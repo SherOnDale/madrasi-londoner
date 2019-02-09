@@ -24,6 +24,7 @@ export default {
 
 @media screen and (max-width: 1100px) {
   .main-title {
+    margin-top: 3rem;
     padding: 0 3rem 1rem 1rem;
   }
 }

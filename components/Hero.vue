@@ -10,6 +10,7 @@
       <span class="name">Joel Jasper</span>
     </div>
     <div class="hero__subtitle">A Passionate Digital Entrepreneur</div>
+    <div class="hero__image"/>
   </div>
 </template>
 
@@ -88,15 +89,23 @@ export default {
     margin-bottom: 2rem;
   }
 
+  &__image {
+    flex-grow: 1;
+    background: url(../static/jo.png) center no-repeat;
+    filter: brightness(50%) sepia(1) hue-rotate(309deg) saturate(143.4%)
+      brightness(103.3%);
+    background-size: contain;
+  }
+
   @media screen and (max-width: 1100px) {
     &__container {
       background: linear-gradient(
         135deg,
         var(--secondary),
-        var(--accent) 25%,
-        var(--secondary) 25%,
-        var(--secondary) 75%,
-        var(--accent) 75%,
+        var(--accent) 35%,
+        var(--secondary) 35%,
+        var(--secondary) 65%,
+        var(--accent) 65%,
         var(--secondary)
       );
     }
@@ -116,6 +125,10 @@ export default {
 
     &__subtitle {
       font-size: 1.5rem;
+    }
+
+    &__image {
+      height: 25rem;
     }
   }
 }
