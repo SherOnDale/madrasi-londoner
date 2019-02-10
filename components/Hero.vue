@@ -10,7 +10,7 @@
       <span class="name">Joel Jasper</span>
     </div>
     <div class="hero__subtitle">A Passionate Digital Entrepreneur</div>
-    <div class="hero__image"/>
+    <!-- <div class="hero__image"/> -->
   </div>
 </template>
 
@@ -47,6 +47,7 @@ export default {
 <style lang="scss">
 .hero {
   &__container {
+    color: white;
     display: flex;
     flex-direction: column;
   }
@@ -63,6 +64,7 @@ export default {
     svg {
       height: 1.2rem;
       width: 1.2rem;
+      fill: white;
     }
   }
 

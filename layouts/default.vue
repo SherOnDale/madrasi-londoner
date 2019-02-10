@@ -42,7 +42,7 @@ html {
       var(--accent) 75%,
       var(--secondary)
     ),
-    linear-gradient(var(--secondary), var(--accent));
+    linear-gradient(var(--secondary-tr), var(--accent));
 }
 
 *,
@@ -55,6 +55,7 @@ html {
 :root {
   --primary: #ffd700;
   --secondary: darkblue;
+  --secondary-tr: rgba(0, 0, 139, 0.7);
   --accent: black;
   --breakpoint-md: 1100px;
 }
